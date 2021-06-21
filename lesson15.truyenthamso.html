@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo hàm nhận vào hai tham số</title>
+</head>
+<body>
+<input type="number" id="a"><p>Nhập vào số a</p>
+<input type="number" id="b"><p>Nhập vào số b</p>
+<button onClick="truyenthamso();">Check</button>
+<script>
+    function truyenthamso(a,b) {
+        a= parseInt(document.getElementById("a").value);
+        b= parseInt(document.getElementById("b").value);
+        if (a>b) {
+            return alert("số thứ nhất > số thứ 2");
+        } else {
+            return alert(a+b);
+        }
+    }
+</script>
+</body>
+</html>
